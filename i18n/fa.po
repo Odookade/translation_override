@@ -1,0 +1,641 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* translation_override
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-06 08:15+0000\n"
+"PO-Revision-Date: 2026-10-06 08:15+0000\n"
+"Last-Translator: Erfan Meraati\n"
+"Language-Team: Persian\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "%s override(s) applied."
+msgstr "%s بازنویسی اعمال شد."
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid ""
+"A field and a selection key are required for a selection value override."
+msgstr ""
+"برای بازنویسی گزینه‌ی Selection، انتخاب فیلد و کلید فنی گزینه الزامی است."
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "A field is required for a field label override."
+msgstr "برای بازنویسی برچسب فیلد، انتخاب فیلد الزامی است."
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "A menu is required for a menu name override."
+msgstr "برای بازنویسی نام منو، انتخاب منو الزامی است."
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "A source text is required for Python code and web client overrides."
+msgstr "برای بازنویسی رشته‌های کد پایتون و وب‌کلاینت، متن مبدا الزامی است."
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "A view and a source text are required for a view text override."
+msgstr "برای بازنویسی متن ویو، انتخاب ویو و متن مبدا الزامی است."
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "A window action is required for a window action name override."
+msgstr "برای بازنویسی نام اکشن پنجره، انتخاب اکشن الزامی است."
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__action_id
+msgid "Action"
+msgstr "اکشن"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__active
+msgid "Active"
+msgstr "فعال"
+
+#. module: translation_override
+#: model:ir.model.fields,help:translation_override.field_translation_override_finder__include_code
+msgid ""
+"Also search the translations loaded from the .po files of the installed "
+"modules (not available for English)."
+msgstr ""
+"جستجو در ترجمه‌های بارگذاری‌شده از فایل‌های .po ماژول‌های نصب‌شده هم انجام "
+"شود (برای زبان انگلیسی در دسترس نیست)."
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "An active override already exists for this field and language."
+msgstr "برای این فیلد و این زبان، یک بازنویسی فعال از قبل وجود دارد."
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "An active override already exists for this menu and language."
+msgstr "برای این منو و این زبان، یک بازنویسی فعال از قبل وجود دارد."
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid ""
+"An active override already exists for this selection value and language."
+msgstr ""
+"برای این گزینه‌ی Selection و این زبان، یک بازنویسی فعال از قبل وجود دارد."
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid ""
+"An active override already exists for this source text, module and language."
+msgstr "برای این متن مبدا، ماژول و زبان، یک بازنویسی فعال از قبل وجود دارد."
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "An active override already exists for this text, view and language."
+msgstr "برای این متن، ویو و زبان، یک بازنویسی فعال از قبل وجود دارد."
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "An active override already exists for this window action and language."
+msgstr "برای این اکشن پنجره و این زبان، یک بازنویسی فعال از قبل وجود دارد."
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__applied
+msgid "Applied"
+msgstr "اعمال‌شده"
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Archived"
+msgstr "بایگانی‌شده"
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_finder_form
+msgid "Close"
+msgstr "بستن"
+
+#. module: translation_override
+#: model:ir.model.fields,help:translation_override.field_translation_override__lang_code
+msgid "Code of the language (e.g. fa_IR), used for fast lookups."
+msgstr "کد زبان (مثلاً fa_IR)، برای جستجوی سریع."
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_finder_form
+msgid "Create Override"
+msgstr "ساخت بازنویسی"
+
+#. module: translation_override
+#: model_terms:ir.actions.act_window,help:translation_override.action_translation_override
+msgid "Create your first translation override"
+msgstr "اولین بازنویسی ترجمه‌ی خود را بسازید"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__create_uid
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__create_uid
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__create_uid
+msgid "Created by"
+msgstr "ایجاد شده توسط"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__create_date
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__create_date
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__create_date
+msgid "Created on"
+msgstr "ایجاد شده در"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_ir_http__display_name
+#: model:ir.model.fields,field_description:translation_override.field_ir_module_module__display_name
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__display_name
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__display_name
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__display_name
+msgid "Display Name"
+msgstr "نام نمایشی"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__search_text
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__matched_text
+msgid "Displayed Text"
+msgstr "متن نمایش‌داده‌شده"
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid ""
+"Enter the source text exactly as it is currently displayed in the selected "
+"language. Every occurrence of this text in the view is replaced."
+msgstr ""
+"متن مبدا را دقیقاً همان‌طور که الان در زبان انتخاب‌شده روی صفحه دیده می‌شود "
+"وارد کنید. همه‌ی موارد این متن در ویو جایگزین می‌شوند."
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__field_id
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__field_id
+msgid "Field"
+msgstr "فیلد"
+
+#. module: translation_override
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override__category__field_label
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override_finder_line__category__field_label
+msgid "Field Label"
+msgstr "برچسب فیلد"
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Field Labels"
+msgstr "برچسب‌های فیلد"
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/wizard/translation_override_finder.py:0
+#: model:ir.actions.act_window,name:translation_override.action_translation_override_finder
+#: model:ir.ui.menu,name:translation_override.menu_translation_override_finder
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_finder_form
+msgid "Find Source Text"
+msgstr "یافتن متن مبدا"
+
+#. module: translation_override
+#: model:ir.model,name:translation_override.model_ir_http
+msgid "HTTP Routing"
+msgstr "مسیریابی HTTP"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_ir_http__id
+#: model:ir.model.fields,field_description:translation_override.field_ir_module_module__id
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__id
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__id
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__id
+msgid "ID"
+msgstr "شناسه"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__note
+msgid "Internal Note"
+msgstr "یادداشت داخلی"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__lang_id
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__lang_id
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Language"
+msgstr "زبان"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__lang_code
+msgid "Language Code"
+msgstr "کد زبان"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__write_uid
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__write_uid
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__write_uid
+msgid "Last Updated by"
+msgstr "آخرین به‌روزرسانی توسط"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__write_date
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__write_date
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__write_date
+msgid "Last Updated on"
+msgstr "آخرین به‌روزرسانی در"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__menu_id
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__menu_id
+msgid "Menu"
+msgstr "منو"
+
+#. module: translation_override
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override__category__menu_label
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override_finder_line__category__menu_label
+msgid "Menu Name"
+msgstr "نام منو"
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Menus"
+msgstr "منوها"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__model_id
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__model_id
+msgid "Model"
+msgstr "مدل"
+
+#. module: translation_override
+#: model:ir.model,name:translation_override.model_ir_module_module
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__module
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__module
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Module"
+msgstr "ماژول"
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "New"
+msgstr "جدید"
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/wizard/translation_override_finder.py:0
+msgid "New Translation Override"
+msgstr "بازنویسی ترجمه‌ی جدید"
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid ""
+"No selection option with the key \"%(key)s\" exists on the field %(field)s."
+msgstr "گزینه‌ای با کلید «%(key)s» روی فیلد %(field)s وجود ندارد."
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid "Notes"
+msgstr "یادداشت‌ها"
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_finder_form
+msgid ""
+"Nothing found. Check the spelling and the language. Python and JavaScript "
+"strings can not be searched in English, because English is their source "
+"language."
+msgstr ""
+"نتیجه‌ای پیدا نشد. املای متن و زبان را بررسی کنید. رشته‌های پایتون و "
+"جاوااسکریپت را نمی‌توان به زبان انگلیسی جستجو کرد، چون انگلیسی زبان مبدا "
+"آن‌هاست."
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid ""
+"Odoo never translates Python strings into English (en_US): the source text "
+"is always returned as is. Choose another language, or use another override "
+"type (field label, view text, menu, ...)."
+msgstr ""
+"اودو رشته‌های پایتون را هرگز به انگلیسی (en_US) ترجمه نمی‌کند و همیشه خود "
+"متن مبدا را برمی‌گرداند. زبان دیگری انتخاب کنید یا از نوع دیگری از بازنویسی "
+"(برچسب فیلد، متن ویو، منو و ...) استفاده کنید."
+
+#. module: translation_override
+#: model:ir.ui.menu,name:translation_override.menu_translation_override
+msgid "Overrides"
+msgstr "بازنویسی‌ها"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__backup_data
+msgid "Previous Value"
+msgstr "مقدار قبلی"
+
+#. module: translation_override
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override__category__code
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override_finder_line__category__code
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Python Code"
+msgstr "کد پایتون"
+
+#. module: translation_override
+#: model:ir.model.fields,help:translation_override.field_translation_override__name
+msgid ""
+"Python code / Web client: the exact English source string, as written in _() / _t() (case sensitive).\n"
+"View text: the text exactly as it is currently displayed in the selected language."
+msgstr ""
+"کد پایتون / وب‌کلاینت: رشته‌ی دقیق انگلیسی مبدا، همان‌طور که در _() / _t() نوشته شده (حساس به حروف بزرگ و کوچک).\n"
+"متن ویو: متن دقیقاً همان‌طور که الان در زبان انتخاب‌شده نمایش داده می‌شود."
+
+#. module: translation_override
+#: model:ir.actions.server,name:translation_override.action_server_translation_override_reapply
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid "Re-apply"
+msgstr "اعمال مجدد"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__label
+msgid "Result"
+msgstr "نتیجه"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__line_ids
+msgid "Results"
+msgstr "نتایج"
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_finder_form
+msgid "Search"
+msgstr "جستجو"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__include_code
+msgid "Search Python/JavaScript Strings"
+msgstr "جستجو در رشته‌های پایتون/جاوااسکریپت"
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Search Translation Overrides"
+msgstr "جستجوی بازنویسی‌های ترجمه"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__searched
+msgid "Searched"
+msgstr "جستجو شده"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__selection_value
+msgid "Selection Key"
+msgstr "کلید گزینه"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__selection_value
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override__category__selection_label
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override_finder_line__category__selection_label
+msgid "Selection Value"
+msgstr "گزینه‌ی Selection"
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Selection Values"
+msgstr "گزینه‌های Selection"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__name
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__source_text
+msgid "Source Text"
+msgstr "متن مبدا"
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_list
+msgid "Target"
+msgstr "هدف"
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid "Technical"
+msgstr "فنی"
+
+#. module: translation_override
+#: model:ir.model.fields,help:translation_override.field_translation_override__selection_value
+msgid ""
+"Technical key of the selection option (e.g. draft, done), not its label."
+msgstr "کلید فنی گزینه (مثلاً draft یا done)، نه برچسب نمایشی آن."
+
+#. module: translation_override
+#: model:ir.model.fields,help:translation_override.field_translation_override__module
+msgid ""
+"Technical name of the module the string belongs to (e.g. sale, stock). Leave"
+" empty to apply the override to every module."
+msgstr ""
+"نام فنی ماژولی که رشته متعلق به آن است (مثلاً sale یا stock). برای اعمال روی"
+" همه‌ی ماژول‌ها خالی بگذارید."
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "The field \"%(field)s\" does not belong to the model \"%(model)s\"."
+msgstr "فیلد «%(field)s» متعلق به مدل «%(model)s» نیست."
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "The field \"%(field)s\" is not a selection field."
+msgstr "فیلد «%(field)s» از نوع Selection نیست."
+
+#. module: translation_override
+#: model:ir.model.fields,help:translation_override.field_translation_override__lang_id
+msgid "The override is only applied for this language."
+msgstr "این بازنویسی فقط برای همین زبان اعمال می‌شود."
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid ""
+"The source text must be the exact English string used in the source code "
+"(case sensitive). Use the \"Find Source Text\" tool to look it up from the "
+"displayed translation. The override is applied immediately, without "
+"restarting the server; users may need to reload the page."
+msgstr ""
+"متن مبدا باید دقیقاً همان رشته‌ی انگلیسی به‌کاررفته در کد باشد (حساس به حروف"
+" بزرگ و کوچک). برای پیدا کردن آن از روی ترجمه‌ی نمایش‌داده‌شده، از ابزار "
+"«یافتن متن مبدا» استفاده کنید. بازنویسی بلافاصله و بدون ری‌استارت سرور اعمال"
+" می‌شود؛ ممکن است کاربران نیاز به بارگذاری مجدد صفحه داشته باشند."
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "The target of the override \"%s\" no longer exists."
+msgstr "هدفِ بازنویسی «%s» دیگر وجود ندارد."
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid ""
+"The text \"%(text)s\" was not found in the view \"%(view)s\" for the "
+"language %(lang)s. Copy it exactly as it is displayed on screen (case "
+"sensitive), or use the \"Find Source Text\" tool."
+msgstr ""
+"متن «%(text)s» در ویو «%(view)s» برای زبان %(lang)s پیدا نشد. آن را دقیقاً "
+"همان‌طور که روی صفحه نمایش داده می‌شود کپی کنید (حساس به حروف بزرگ و کوچک)، "
+"یا از ابزار «یافتن متن مبدا» استفاده کنید."
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid ""
+"The translation is written on the target record. Its previous value is kept "
+"and restored when this override is archived or deleted."
+msgstr ""
+"ترجمه روی رکورد هدف نوشته می‌شود. مقدار قبلی نگه داشته می‌شود و هنگام "
+"بایگانی یا حذف این بازنویسی بازگردانده می‌شود."
+
+#. module: translation_override
+#: model:ir.model.fields,help:translation_override.field_translation_override__applied
+msgid ""
+"The value is currently written on the target record. Its previous value is "
+"kept and restored when the override is archived or deleted."
+msgstr ""
+"مقدار در حال حاضر روی رکورد هدف نوشته شده است. مقدار قبلی نگه داشته می‌شود و"
+" هنگام بایگانی یا حذف بازنویسی بازگردانده می‌شود."
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "This override type has no translated target."
+msgstr "این نوع بازنویسی رکورد هدفِ ترجمه‌پذیر ندارد."
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__value
+msgid "Translation"
+msgstr "ترجمه"
+
+#. module: translation_override
+#: model:ir.model,name:translation_override.model_translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid "Translation Override"
+msgstr "بازنویسی ترجمه"
+
+#. module: translation_override
+#: model:ir.model,name:translation_override.model_translation_override_finder
+msgid "Translation Override: Find Source Text"
+msgstr "بازنویسی ترجمه: یافتن متن مبدا"
+
+#. module: translation_override
+#: model:ir.model,name:translation_override.model_translation_override_finder_line
+msgid "Translation Override: Search Result"
+msgstr "بازنویسی ترجمه: نتیجه‌ی جستجو"
+
+#. module: translation_override
+#: model:ir.actions.act_window,name:translation_override.action_translation_override
+#: model:ir.ui.menu,name:translation_override.menu_translation_override_root
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_list
+msgid "Translation Overrides"
+msgstr "بازنویسی ترجمه‌ها"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__category
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__category
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Type"
+msgstr "نوع"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__view_id
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__view_id
+msgid "View"
+msgstr "ویو"
+
+#. module: translation_override
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override__category__view_text
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override_finder_line__category__view_text
+msgid "View Text"
+msgstr "متن ویو"
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "View Texts"
+msgstr "متن‌های ویو"
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Web Client"
+msgstr "وب‌کلاینت"
+
+#. module: translation_override
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override__category__web
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override_finder_line__category__web
+msgid "Web Client (JavaScript)"
+msgstr "وب‌کلاینت (جاوااسکریپت)"
+
+#. module: translation_override
+#: model_terms:ir.actions.act_window,help:translation_override.action_translation_override
+msgid ""
+"When you find a wrong translation in Odoo, create an override here: it takes"
+" priority over the .po files."
+msgstr ""
+"هر جا در اودو ترجمه‌ی نادرستی دیدید، اینجا یک بازنویسی بسازید؛ این بازنویسی "
+"بر فایل‌های .po اولویت دارد."
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__action_id
+msgid "Window Action"
+msgstr "اکشن پنجره"
+
+#. module: translation_override
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override__category__action_label
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override_finder_line__category__action_label
+msgid "Window Action Name"
+msgstr "نام اکشن پنجره"
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Window Actions"
+msgstr "اکشن‌های پنجره"
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__wizard_id
+msgid "Wizard"
+msgstr "ویزارد"
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid ""
+"Write the translation on the target again, e.g. after its translations were "
+"modified manually."
+msgstr ""
+"ترجمه را دوباره روی هدف بنویس؛ مثلاً بعد از اینکه ترجمه‌های آن به‌صورت دستی "
+"تغییر کرده است."
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_finder_form
+msgid "e.g. Pay Runs"
+msgstr "مثلاً: Pay Runs"
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid "e.g. draft"
+msgstr "مثلاً: draft"
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid "e.g. sale"
+msgstr "مثلاً: sale"
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid "e.g. support ticket, reason of the change..."
+msgstr "مثلاً: شماره تیکت پشتیبانی، دلیل این تغییر..."

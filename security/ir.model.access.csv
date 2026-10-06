@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_translation_override_system,translation.override.system,model_translation_override,base.group_system,1,1,1,1
+access_translation_override_finder_system,translation.override.finder.system,model_translation_override_finder,base.group_system,1,1,1,1
+access_translation_override_finder_line_system,translation.override.finder.line.system,model_translation_override_finder_line,base.group_system,1,1,1,1

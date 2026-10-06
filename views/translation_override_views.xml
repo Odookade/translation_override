@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- ==================== FORM ==================== -->
+    <record id="view_translation_override_form" model="ir.ui.view">
+        <field name="name">translation.override.form</field>
+        <field name="model">translation.override</field>
+        <field name="arch" type="xml">
+            <form string="Translation Override">
+                <header>
+                    <button name="action_reapply" type="object" string="Re-apply" class="btn-primary"
+                            invisible="not active or category in ('code', 'web')"
+                            help="Write the translation on the target again, e.g. after its translations were modified manually."/>
+                    <field name="applied" widget="boolean_toggle" readonly="1"
+                           invisible="category in ('code', 'web')"/>
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
+                    <div class="alert alert-info" role="alert" invisible="category not in ('code', 'web')">
+                        The source text must be the exact English string used in the source code (case sensitive). Use the "Find Source Text" tool to look it up from the displayed translation. The override is applied immediately, without restarting the server; users may need to reload the page.
+                    </div>
+                    <div class="alert alert-warning" role="alert" invisible="category != 'view_text'">
+                        Enter the source text exactly as it is currently displayed in the selected language. Every occurrence of this text in the view is replaced.
+                    </div>
+                    <div class="alert alert-info" role="alert" invisible="category not in ('field_label', 'selection_label', 'menu_label', 'action_label')">
+                        The translation is written on the target record. Its previous value is kept and restored when this override is archived or deleted.
+                    </div>
+                    <group>
+                        <group>
+                            <field name="category"/>
+                            <field name="lang_id" options="{'no_create': True}"/>
+                            <field name="active" invisible="1"/>
+                        </group>
+                        <group>
+                            <field name="module" placeholder="e.g. sale"
+                                   invisible="category not in ('code', 'web')"/>
+                            <field name="model_id" options="{'no_create': True}"
+                                   invisible="category not in ('field_label', 'selection_label')"
+                                   required="category in ('field_label', 'selection_label')"/>
+                            <field name="field_id" options="{'no_create': True}"
+                                   invisible="category not in ('field_label', 'selection_label')"
+                                   required="category in ('field_label', 'selection_label')"/>
+                            <field name="selection_value" placeholder="e.g. draft"
+                                   invisible="category != 'selection_label'"
+                                   required="category == 'selection_label'"/>
+                            <field name="view_id" options="{'no_create': True}"
+                                   invisible="category != 'view_text'"
+                                   required="category == 'view_text'"/>
+                            <field name="menu_id" options="{'no_create': True}"
+                                   invisible="category != 'menu_label'"
+                                   required="category == 'menu_label'"/>
+                            <field name="action_id" options="{'no_create': True}"
+                                   invisible="category != 'action_label'"
+                                   required="category == 'action_label'"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="name"
+                               invisible="category not in ('code', 'web', 'view_text')"
+                               required="category in ('code', 'web', 'view_text')"/>
+                        <field name="value"/>
+                    </group>
+                    <notebook>
+                        <page string="Notes" name="notes">
+                            <field name="note" placeholder="e.g. support ticket, reason of the change..."/>
+                        </page>
+                        <page string="Technical" name="technical" groups="base.group_no_one"
+                              invisible="category in ('code', 'web')">
+                            <group>
+                                <field name="backup_data"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- ==================== LIST ==================== -->
+    <record id="view_translation_override_list" model="ir.ui.view">
+        <field name="name">translation.override.list</field>
+        <field name="model">translation.override</field>
+        <field name="arch" type="xml">
+            <list string="Translation Overrides" decoration-muted="not active">
+                <field name="category"/>
+                <field name="lang_id"/>
+                <field name="display_name" string="Target"/>
+                <field name="module" optional="hide"/>
+                <field name="value"/>
+                <field name="applied" optional="show" invisible="category in ('code', 'web')"/>
+                <field name="active" widget="boolean_toggle"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- ==================== SEARCH ==================== -->
+    <record id="view_translation_override_search" model="ir.ui.view">
+        <field name="name">translation.override.search</field>
+        <field name="model">translation.override</field>
+        <field name="arch" type="xml">
+            <search string="Search Translation Overrides">
+                <field name="name"/>
+                <field name="value"/>
+                <field name="module"/>
+                <field name="lang_id"/>
+                <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+                <separator/>
+                <filter string="Python Code" name="cat_code" domain="[('category', '=', 'code')]"/>
+                <filter string="Web Client" name="cat_web" domain="[('category', '=', 'web')]"/>
+                <filter string="Field Labels" name="cat_field" domain="[('category', '=', 'field_label')]"/>
+                <filter string="Selection Values" name="cat_selection" domain="[('category', '=', 'selection_label')]"/>
+                <filter string="View Texts" name="cat_view" domain="[('category', '=', 'view_text')]"/>
+                <filter string="Menus" name="cat_menu" domain="[('category', '=', 'menu_label')]"/>
+                <filter string="Window Actions" name="cat_action" domain="[('category', '=', 'action_label')]"/>
+                <group>
+                    <filter string="Language" name="group_lang" context="{'group_by': 'lang_id'}"/>
+                    <filter string="Type" name="group_category" context="{'group_by': 'category'}"/>
+                    <filter string="Module" name="group_module" context="{'group_by': 'module'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- ==================== ACTIONS ==================== -->
+    <record id="action_translation_override" model="ir.actions.act_window">
+        <field name="name">Translation Overrides</field>
+        <field name="res_model">translation.override</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_translation_override_search"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create your first translation override</p>
+            <p>When you find a wrong translation in Odoo, create an override here: it takes priority over the .po files.</p>
+        </field>
+    </record>
+
+    <record id="action_server_translation_override_reapply" model="ir.actions.server">
+        <field name="name">Re-apply</field>
+        <field name="model_id" ref="model_translation_override"/>
+        <field name="binding_model_id" ref="model_translation_override"/>
+        <field name="binding_view_types">list,form</field>
+        <field name="group_ids" eval="[(4, ref('base.group_system'))]"/>
+        <field name="state">code</field>
+        <field name="code">action = records.action_reapply()</field>
+    </record>
+
+</odoo>

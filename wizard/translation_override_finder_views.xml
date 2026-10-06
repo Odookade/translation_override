@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_translation_override_finder_form" model="ir.ui.view">
+        <field name="name">translation.override.finder.form</field>
+        <field name="model">translation.override.finder</field>
+        <field name="arch" type="xml">
+            <form string="Find Source Text">
+                <group>
+                    <group>
+                        <field name="search_text" placeholder="e.g. Pay Runs"/>
+                        <field name="lang_id" options="{'no_create': True}"/>
+                    </group>
+                    <group>
+                        <field name="include_code"/>
+                        <field name="searched" invisible="1"/>
+                    </group>
+                </group>
+                <field name="line_ids" readonly="1" invisible="not line_ids">
+                    <list create="0" delete="0">
+                        <field name="category"/>
+                        <field name="label"/>
+                        <field name="matched_text"/>
+                        <button name="action_create_override" type="object" string="Create Override" class="btn-link" icon="fa-plus"/>
+                    </list>
+                </field>
+                <div class="alert alert-warning" role="alert" invisible="not searched or line_ids">
+                    Nothing found. Check the spelling and the language. Python and JavaScript strings can not be searched in English, because English is their source language.
+                </div>
+                <footer>
+                    <button name="action_search" type="object" string="Search" class="btn-primary" data-hotkey="q"/>
+                    <button string="Close" class="btn-secondary" special="cancel" data-hotkey="x"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_translation_override_finder" model="ir.actions.act_window">
+        <field name="name">Find Source Text</field>
+        <field name="res_model">translation.override.finder</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

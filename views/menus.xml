@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Settings > Translations (visible in developer mode, like its parent) -->
+    <menuitem id="menu_translation_override_root"
+              name="Translation Overrides"
+              parent="base.menu_translation"
+              groups="base.group_system"
+              sequence="50">
+        <menuitem id="menu_translation_override"
+                  name="Overrides"
+                  action="action_translation_override"
+                  sequence="10"/>
+        <menuitem id="menu_translation_override_finder"
+                  name="Find Source Text"
+                  action="action_translation_override_finder"
+                  sequence="20"/>
+    </menuitem>
+</odoo>

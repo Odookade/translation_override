@@ -1,0 +1,609 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* translation_override
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-06 08:15+0000\n"
+"PO-Revision-Date: 2026-10-06 08:15+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "%s override(s) applied."
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid ""
+"A field and a selection key are required for a selection value override."
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "A field is required for a field label override."
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "A menu is required for a menu name override."
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "A source text is required for Python code and web client overrides."
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "A view and a source text are required for a view text override."
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "A window action is required for a window action name override."
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__action_id
+msgid "Action"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__active
+msgid "Active"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,help:translation_override.field_translation_override_finder__include_code
+msgid ""
+"Also search the translations loaded from the .po files of the installed "
+"modules (not available for English)."
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "An active override already exists for this field and language."
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "An active override already exists for this menu and language."
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid ""
+"An active override already exists for this selection value and language."
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid ""
+"An active override already exists for this source text, module and language."
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "An active override already exists for this text, view and language."
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "An active override already exists for this window action and language."
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__applied
+msgid "Applied"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Archived"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_finder_form
+msgid "Close"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,help:translation_override.field_translation_override__lang_code
+msgid "Code of the language (e.g. fa_IR), used for fast lookups."
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_finder_form
+msgid "Create Override"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.actions.act_window,help:translation_override.action_translation_override
+msgid "Create your first translation override"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__create_uid
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__create_uid
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__create_date
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__create_date
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_ir_http__display_name
+#: model:ir.model.fields,field_description:translation_override.field_ir_module_module__display_name
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__display_name
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__display_name
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__search_text
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__matched_text
+msgid "Displayed Text"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid ""
+"Enter the source text exactly as it is currently displayed in the selected "
+"language. Every occurrence of this text in the view is replaced."
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__field_id
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__field_id
+msgid "Field"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override__category__field_label
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override_finder_line__category__field_label
+msgid "Field Label"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Field Labels"
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/wizard/translation_override_finder.py:0
+#: model:ir.actions.act_window,name:translation_override.action_translation_override_finder
+#: model:ir.ui.menu,name:translation_override.menu_translation_override_finder
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_finder_form
+msgid "Find Source Text"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model,name:translation_override.model_ir_http
+msgid "HTTP Routing"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_ir_http__id
+#: model:ir.model.fields,field_description:translation_override.field_ir_module_module__id
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__id
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__id
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__id
+msgid "ID"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__note
+msgid "Internal Note"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__lang_id
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__lang_id
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Language"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__lang_code
+msgid "Language Code"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__write_uid
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__write_uid
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__write_date
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__write_date
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__menu_id
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__menu_id
+msgid "Menu"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override__category__menu_label
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override_finder_line__category__menu_label
+msgid "Menu Name"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Menus"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__model_id
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__model_id
+msgid "Model"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model,name:translation_override.model_ir_module_module
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__module
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__module
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Module"
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "New"
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/wizard/translation_override_finder.py:0
+msgid "New Translation Override"
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid ""
+"No selection option with the key \"%(key)s\" exists on the field %(field)s."
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid "Notes"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_finder_form
+msgid ""
+"Nothing found. Check the spelling and the language. Python and JavaScript "
+"strings can not be searched in English, because English is their source "
+"language."
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid ""
+"Odoo never translates Python strings into English (en_US): the source text "
+"is always returned as is. Choose another language, or use another override "
+"type (field label, view text, menu, ...)."
+msgstr ""
+
+#. module: translation_override
+#: model:ir.ui.menu,name:translation_override.menu_translation_override
+msgid "Overrides"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__backup_data
+msgid "Previous Value"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override__category__code
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override_finder_line__category__code
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Python Code"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,help:translation_override.field_translation_override__name
+msgid ""
+"Python code / Web client: the exact English source string, as written in _() / _t() (case sensitive).\n"
+"View text: the text exactly as it is currently displayed in the selected language."
+msgstr ""
+
+#. module: translation_override
+#: model:ir.actions.server,name:translation_override.action_server_translation_override_reapply
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid "Re-apply"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__label
+msgid "Result"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__line_ids
+msgid "Results"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_finder_form
+msgid "Search"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__include_code
+msgid "Search Python/JavaScript Strings"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Search Translation Overrides"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder__searched
+msgid "Searched"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__selection_value
+msgid "Selection Key"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__selection_value
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override__category__selection_label
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override_finder_line__category__selection_label
+msgid "Selection Value"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Selection Values"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__name
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__source_text
+msgid "Source Text"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_list
+msgid "Target"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid "Technical"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,help:translation_override.field_translation_override__selection_value
+msgid ""
+"Technical key of the selection option (e.g. draft, done), not its label."
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,help:translation_override.field_translation_override__module
+msgid ""
+"Technical name of the module the string belongs to (e.g. sale, stock). Leave"
+" empty to apply the override to every module."
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "The field \"%(field)s\" does not belong to the model \"%(model)s\"."
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "The field \"%(field)s\" is not a selection field."
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,help:translation_override.field_translation_override__lang_id
+msgid "The override is only applied for this language."
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid ""
+"The source text must be the exact English string used in the source code "
+"(case sensitive). Use the \"Find Source Text\" tool to look it up from the "
+"displayed translation. The override is applied immediately, without "
+"restarting the server; users may need to reload the page."
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "The target of the override \"%s\" no longer exists."
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid ""
+"The text \"%(text)s\" was not found in the view \"%(view)s\" for the "
+"language %(lang)s. Copy it exactly as it is displayed on screen (case "
+"sensitive), or use the \"Find Source Text\" tool."
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid ""
+"The translation is written on the target record. Its previous value is kept "
+"and restored when this override is archived or deleted."
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,help:translation_override.field_translation_override__applied
+msgid ""
+"The value is currently written on the target record. Its previous value is "
+"kept and restored when the override is archived or deleted."
+msgstr ""
+
+#. module: translation_override
+#. odoo-python
+#: code:addons/translation_override/models/translation_override.py:0
+msgid "This override type has no translated target."
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__value
+msgid "Translation"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model,name:translation_override.model_translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid "Translation Override"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model,name:translation_override.model_translation_override_finder
+msgid "Translation Override: Find Source Text"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model,name:translation_override.model_translation_override_finder_line
+msgid "Translation Override: Search Result"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.actions.act_window,name:translation_override.action_translation_override
+#: model:ir.ui.menu,name:translation_override.menu_translation_override_root
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_list
+msgid "Translation Overrides"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__category
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__category
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Type"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__view_id
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__view_id
+msgid "View"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override__category__view_text
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override_finder_line__category__view_text
+msgid "View Text"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "View Texts"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Web Client"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override__category__web
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override_finder_line__category__web
+msgid "Web Client (JavaScript)"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.actions.act_window,help:translation_override.action_translation_override
+msgid ""
+"When you find a wrong translation in Odoo, create an override here: it takes"
+" priority over the .po files."
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override__action_id
+msgid "Window Action"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override__category__action_label
+#: model:ir.model.fields.selection,name:translation_override.selection__translation_override_finder_line__category__action_label
+msgid "Window Action Name"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_search
+msgid "Window Actions"
+msgstr ""
+
+#. module: translation_override
+#: model:ir.model.fields,field_description:translation_override.field_translation_override_finder_line__wizard_id
+msgid "Wizard"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid ""
+"Write the translation on the target again, e.g. after its translations were "
+"modified manually."
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_finder_form
+msgid "e.g. Pay Runs"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid "e.g. draft"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid "e.g. sale"
+msgstr ""
+
+#. module: translation_override
+#: model_terms:ir.ui.view,arch_db:translation_override.view_translation_override_form
+msgid "e.g. support ticket, reason of the change..."
+msgstr ""
